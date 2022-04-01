@@ -1,0 +1,552 @@
+/* index */
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+    display: grid;
+
+    /*posicion de las areas */
+
+    grid-template-areas:
+    "header"
+    "contenedor"
+    "footer_container";
+
+}
+
+/* Nombrar areas */
+
+header {
+    grid-area: header;
+}
+
+.contenedor {
+    grid-area: contenedor;
+}
+
+.footer_container {
+    grid-area: footer;
+}
+/* responsive */
+
+@media (max-width: 800px) {
+    .contenedor {
+    grid-template-areas: 
+        "header header header"
+        "contenedor"
+        "footer footer footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: (2, 1fr);
+}
+.imgChica, .bordesRedondeados {
+    width: 50px;
+}
+}
+@media (max-width: 800px) {
+    .header {
+        grid-template-rows: (5,1fr);
+    }
+}
+@media (max-width: 800px) {
+    .footer_container {
+        align-items: center;
+    }
+}
+/* nav */
+
+.logo {
+    width: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px;
+    border-radius: 50%;
+
+}
+.logo:hover {
+    box-shadow: 0 0 10px rgb(170, 238, 204);
+     width: 200px;
+  }
+  a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* nav*/
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+header {
+    width: 100%;
+    background: rgb(170, 238, 204);
+}
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid white;
+}
+header label {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li {
+    border-right:  1px solid white;
+    flex-grow: 1;
+    text-align: center;
+}
+.menu li:hover {
+    background: rgba(0,0,0,0.3);
+}
+.menu li a {
+    display: block;
+    padding: 15px;
+    color: rgb(10, 83, 10);
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    header label {
+        display: block;
+    }
+    .logo {
+        width: 150px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 0px;
+        border-radius: 50%;
+    
+    }
+    .logo:hover {
+        box-shadow: 0 0 10px rgb(170, 238, 204);
+         width: 200px;
+      }
+      a:link, a:visited, a:active {
+        text-decoration:none;
+    }
+
+    .menu {
+        position: absolute;
+        background: rgb(170, 238, 204);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li {
+        border-top: 1px solid white;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+}
+
+.bordesRedondeados {
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+@media (min-width:768px) {
+.grid-index {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.grid-index {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: 
+    "cactus suculentas";
+    margin-right: 50px;
+    align-items: center;
+    row-gap: 30px;
+}
+}
+.suculentas {
+    color: rgb(10, 83, 10);
+    font-size: medium;
+    float: left;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+.cactus {
+    color: rgb(10, 83, 10);
+    font-size: medium;
+    float: left;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+
+}
+
+.imgChica {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+
+}
+
+
+.titulo {
+    color: rgb(10, 83, 10);
+    font-family: 'Kalam', cursive;
+    font-weight: normal;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.tipos {
+    justify-items: flex-start;
+    text-align: left;
+    margin: 10px;
+}
+
+h2 {
+    color: rgb(10, 83, 10); 
+    font-family: 'Kalam', cursive;
+    text-decoration: solid;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.tipos-graptoveria {
+    margin-bottom: 50px;
+}
+
+/* sobre nosotros*/
+
+.container-sobrenosotros {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.historia {
+    font-family: 'Inter', sans-serif;
+    color: rgb(10, 83, 10);
+    display: flex;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.ejemplos {
+    font-family: 'Kalam', cursive;
+    color: rgb(10, 83, 10);
+    font-style: oblique;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 25px;
+}
+@media (max-width: 800px) {
+    .grid-fotos {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        row-gap: 30px;
+    }
+    }
+ @media (min-width: 799px) {
+.grid-fotos {
+    display: grid;
+    column-gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+    }
+.echeveriaCurls, .ceropegia, .sansevieria {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px;
+    cursor: pointer;
+}
+
+    /*galeria*/
+
+    @media (max-width: 800px) {
+        .grid-galeria {
+            display: grid;
+            grid-area: 
+            "nombre"
+            "imagenes";
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 30px;
+            margin-bottom: 30px;
+            justify-content: center;
+            justify-items: center;
+        }
+        .nombre {
+            display: none;
+         visibility: hidden;   
+        }
+    }
+    @media (min-width: 799px) {
+.grid-galeria {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20px 1fr 20px 1fr;
+   justify-items: center;
+    margin-bottom: 30px;
+}
+    }
+.nombre {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: medium;
+    color: rgb(10, 83, 10);
+}
+
+.imagenes {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px;
+    cursor: pointer;
+    
+}
+
+.imagenes:hover, .echeveriaCurls:hover, 
+.ceropegia:hover, .sansevieria:hover {
+    filter: opacity(.5);
+}
+    /*precios*/
+
+.container-precios {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+ 
+}
+
+.tabla {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+td {
+    font-size: small;
+    color: rgb(10, 83, 10);
+    font-family: 'Inter', sans-serif;
+}
+.titulo-producto {
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(10, 83, 10);
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(236, 255, 246);
+}
+.mensaje {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: rgb(10, 83, 10);
+    margin-bottom: 50px;
+}
+    /*contacto*/
+    @media (max-width: 800px) {
+        .contacto-grid {
+        width: 100%;
+        display: grid;
+        grid-template-rows: (3, 1fr);
+        row-gap: 30px;
+        font-family: 'Inter', sans-serif;
+        color: rgb(10, 83, 10);
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        }  
+        .mapa {
+            width: 50%;
+            margin-left: 20%;
+        }
+    }
+    @media (min-width: 799px) {
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 300px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(10, 83, 10);
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.mapa {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    border-style: double;
+    padding: 16px;
+}
+.boton {
+   margin-left: 60px;
+}
+    }
+/*footer*/
+@media (min-width: 799px) {
+    .footer_container {
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+    .footer_container {
+        width: 20%;
+        height: 100px;
+    background-color: rgb(170, 238, 204);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 205px;
+  
+
+}
+.derechos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0a530a;
+    font-family: 'Kalam', cursive;
+    font-size: medium;
+    font-weight: bold;
+}
+@media (max-width: 800px) {
+    .social-footer {
+        max-width: 300px;
+        display: flex;
+        margin-left: 0;
+        justify-content: space-between;
+        justify-items: center;
+        margin-top: 40px;
+            
+    }
+    .logo-footer img {
+        width: 100px;
+}
+.redes-sociales {
+    display: flex;
+    justify-content: right;
+    justify-items: right;
+}
+.texto-footer {
+    display: flex;
+    justify-content: left;
+    justify-items: left;
+    text-align: left;
+    width: 250px; 
+    color: #0a530a;
+    font-family: 'Kalam', cursive;
+    font-size: smaller;
+    font-weight: bold;
+    align-items: flex-start;
+}
+.footer-derechos {
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+}
+@media (min-width: 799px) {
+ .social-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-top: 30px;
+ }
+
+ .logo-footer img {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    margin-right: 150px;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .redes-sociales {
+     display: flex;
+     justify-content: space-between;
+     width: 120px;
+     
+ }
+
+ .texto-footer{
+    width: 250px; 
+    color: #0a530a;
+    font-family: 'Kalam', cursive;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 20px;
+ }
+ }
