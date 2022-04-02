@@ -190,6 +190,7 @@ body {
     grid-template-areas: 
     "cactus suculentas";
     margin-right: 50px;
+    margin-bottom: 5px;
     align-items: center;
     row-gap: 30px;
 }
@@ -201,7 +202,9 @@ body {
     text-align: left;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
+    margin-bottom: 15px;
 }
+
 .cactus {
     color: rgb(10, 83, 10);
     font-size: medium;
@@ -209,6 +212,7 @@ body {
     text-align: left;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
+    margin-bottom: 15px;
 
 }
 
