@@ -38,11 +38,6 @@ header {
         grid-template-columns: 1fr;
         grid-template-rows: (2, 1fr);
 }
-.imgChica, .bordesRedondeados {
-    width: 50px;
-    border-radius: 20px;
-    box-shadow: 0px 10px 15px;
-}
 }
 @media (max-width: 800px) {
     .header {
@@ -171,14 +166,6 @@ body {
     width: 100%;
 }
 
-.bordesRedondeados {
-    border-radius: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
 @media (min-width:768px) {
 .grid-index {
     display: grid;
@@ -229,9 +216,23 @@ body {
     cursor: pointer;
 
 }
-.imgChica:hover {
-    filter: opacity(.5);
+@media (min-width: 799px) {
+    .imgChica:hover {
+        filter: opacity(.5);
+    }
 }
+
+@media (max-width: 800px) {
+    .imgChica {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    }
+
+}
+
 
 
 .titulo {
