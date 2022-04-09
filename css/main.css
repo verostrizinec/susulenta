@@ -13,6 +13,12 @@
     border-style: double;
 
 }
+@media (max-width: 768px) {
+    .tabla {
+    border-style: none;
+}
+}
+
 
 .table {
     font-size: medium;
