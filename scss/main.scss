@@ -1,6 +1,6 @@
 /*APLICANDO SASS*/
 $color-fondo: rgb(170, 238, 204);
-
+$estilo-borde: double;
 
 /*APLICANDO BOOTSTRAP*/
 
@@ -14,7 +14,7 @@ $color-fondo: rgb(170, 238, 204);
     width: 50%;
     margin-left: 25%;
     border-color: rgb(10, 83, 10);
-    border-style: double;
+    border-style: $estilo-borde;
 
 }
 @media (max-width: 768px) {
