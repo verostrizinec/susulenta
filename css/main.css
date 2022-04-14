@@ -10,7 +10,8 @@
   width: 50%;
   margin-left: 25%;
   border-color: #0a530a;
-  border-style: double; }
+  border-style: double; 
+}
 
 @media (max-width: 768px) {
   .tabla {
@@ -64,7 +65,9 @@
   margin: auto;
   display: grid;
   /*posicion de las areas */
-  grid-template-areas: "header" "container" "footer_container"; }
+  grid-template-areas: "header"
+ "container"
+ "footer_container"; }
 
 /* Nombrar areas */
 header {
@@ -79,7 +82,9 @@ header {
 /* responsive */
 @media (max-width: 800px) {
   .container {
-    grid-template-areas: "header header header" "container" "footer footer footer";
+    grid-template-areas: "header header header"
+ "container"
+ "footer footer footer";
     grid-template-columns: 1fr;
     grid-template-rows: 2, 1fr; } }
 
@@ -260,7 +265,8 @@ h2 {
 @media (max-width: 800px) {
   .grid-galeria {
     display: grid;
-    grid-area: "nombre" "imagenes";
+    grid-area: "nombre"
+ "imagenes";
     grid-template-columns: repeat(1, 1fr);
     row-gap: 30px;
     margin-bottom: 30px;
