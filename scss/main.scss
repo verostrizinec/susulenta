@@ -1,4 +1,6 @@
 /*APLICANDO SASS*/
+$color-fondo: rgb(170, 238, 204);
+
 
 /*APLICANDO BOOTSTRAP*/
 
@@ -44,7 +46,7 @@
 
 }
 .navbar-brand:hover {
-    box-shadow: 0 0 10px rgb(170, 238, 204);
+    box-shadow: 0 0 10px $color-fondo;
      width: 200px;
   }
   .navbar-brand:link, a:visited, a:active {
@@ -58,7 +60,7 @@
 .formulario {
     width: 300px;
     border-radius: 40px;
-    background-image: linear-gradient(rgb(170, 238, 204),rgb(207, 248, 228));
+    background-image: linear-gradient($color-fondo,rgb(207, 248, 228));
     padding: 20px;
     border-color: rgb(3, 173, 91);
     border-style: solid;
@@ -133,7 +135,7 @@ header {
 
 }
 .logo:hover {
-    box-shadow: 0 0 10px rgb(170, 238, 204);
+    box-shadow: 0 0 10px $color-fondo;
      width: 200px;
   }
   a:link, a:visited, a:active {
@@ -457,7 +459,7 @@ input {
    margin-top: 20px;
    padding: 7px 20px;
    border-radius: 40px;
-   background-color: rgb(170, 238, 204);
+   background-color: $color-fondo;
    color: rgb(10, 83, 10);
    border: solid 1px;
 
@@ -482,7 +484,7 @@ input {
     .footer_container {
         width: 20%;
         height: 100px;
-    background-color: rgb(170, 238, 204);
+    background-color: $color-fondo;
     display: flex;
     flex-direction: column;
     width: 100%;
