@@ -23,7 +23,6 @@ $estilo-borde: double;
 }
 }
 
-
 .table {
     font-size: medium;
     color: rgb(10, 83, 10);
@@ -43,20 +42,19 @@ $estilo-borde: double;
     margin: auto;
     padding: 0px;
     border-radius: 50%;
-
 }
 .navbar-brand:hover {
     box-shadow: 0 0 10px $color-fondo;
      width: 200px;
-  }
-  .navbar-brand:link, a:visited, a:active {
-    text-decoration:none;
+
 }
-.nav-item, .nav-link.active {
+
+.nav-item {
     color: rgb(10, 83, 10);
     font-family: 'Inter', sans-serif;
     font-size: large;
 }
+
 .formulario {
     width: 300px;
     border-radius: 40px;
@@ -123,25 +121,6 @@ header {
 }
 /* nav */
 
-.logo {
-    width: 200px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: 0px;
-    border-radius: 50%;
-
-}
-.logo:hover {
-    box-shadow: 0 0 10px $color-fondo;
-     width: 200px;
-  }
-  a:link, a:visited, a:active {
-    text-decoration:none;
-}
-
 body {
     background-color: white;
     margin: 0;
@@ -150,10 +129,6 @@ body {
 }
 
 @media (min-width:768px) {
-.grid-index {
-    display: grid;
-    grid-template-columns: 1fr;
-}
 .grid-index {
     display: grid;
     column-gap: 10px;
@@ -246,10 +221,6 @@ h2 {
 }
 
 
-.tipos-graptoveria {
-    margin-bottom: 50px;
-}
-
 /* sobre nosotros*/
 
 .container-sobrenosotros {
@@ -278,7 +249,7 @@ h2 {
 }
 @keyframes slidein {
     from {
-      margin-left: 100%;
+      margin-left: auto;
       width: 300%
     }
   
@@ -307,7 +278,9 @@ h2 {
     max-width: 100%;
 }
     }
-.echeveriaCurls, .ceropegia, .sansevieria {
+.echeveriaCurls, 
+.ceropegia, 
+.sansevieria {
     width: 250px;
     display: flex;
     flex-direction: row;
@@ -372,26 +345,12 @@ h2 {
     filter: opacity(.5);
 }
     /*precios*/
-
-.container-precios {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
- 
-}
-
 td {
     font-size: small;
     color: rgb(10, 83, 10);
     font-family: 'Inter', sans-serif;
 }
-.titulo-producto {
-    font-size: medium;
-    font-weight: bold;
-    color: rgb(10, 83, 10);
-    font-family: 'Inter', sans-serif;
-    background-color: rgb(236, 255, 246);
-}
+
 .mensaje {
     font-family: 'Inter', sans-serif;
     text-align: center;
@@ -413,20 +372,20 @@ td {
         justify-content: center;
         align-items: center;
         align-content: center;
-        }  
         .mapa {
             width: 50%;
             margin-left: 5%;
-        }
         .final {
             text-align: center;
-        }
+        .contacto {
+            text-align: start;
+            margin-top: 10px;
+    }
+    }
+    }
+    }
     }
  
-    .contacto {
-        text-align: start;
-        margin-top: 10px;
-    }
     @media (min-width: 799px) {
 .contacto-grid {
     display: grid;
@@ -479,18 +438,12 @@ input {
         display: flex;
         margin-left: 0;
         margin-right: 0;
-    }
-}
-    .footer_container {
-        width: 20%;
-        height: 100px;
-    background-color: $color-fondo;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 205px;
-  
-
+        background-color: $color-fondo;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 205px;
+    } 
 }
 .derechos {
     display: flex;
@@ -572,4 +525,4 @@ input {
     font-weight: bold;
     margin-left: 20px;
  }
- }
+}

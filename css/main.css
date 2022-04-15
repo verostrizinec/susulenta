@@ -10,8 +10,7 @@
   width: 50%;
   margin-left: 25%;
   border-color: #0a530a;
-  border-style: double; 
-}
+  border-style: double; }
 
 @media (max-width: 768px) {
   .tabla {
@@ -38,10 +37,7 @@
   box-shadow: 0 0 10px #aaeecc;
   width: 200px; }
 
-.navbar-brand:link, a:visited, a:active {
-  text-decoration: none; }
-
-.nav-item, .nav-link.active {
+.nav-item {
   color: #0a530a;
   font-family: 'Inter', sans-serif;
   font-size: large; }
@@ -65,9 +61,7 @@
   margin: auto;
   display: grid;
   /*posicion de las areas */
-  grid-template-areas: "header"
- "container"
- "footer_container"; }
+  grid-template-areas: "header" "container" "footer_container"; }
 
 /* Nombrar areas */
 header {
@@ -82,9 +76,7 @@ header {
 /* responsive */
 @media (max-width: 800px) {
   .container {
-    grid-template-areas: "header header header"
- "container"
- "footer footer footer";
+    grid-template-areas: "header header header" "container" "footer footer footer";
     grid-template-columns: 1fr;
     grid-template-rows: 2, 1fr; } }
 
@@ -97,23 +89,6 @@ header {
     align-items: center; } }
 
 /* nav */
-.logo {
-  width: 200px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  padding: 0px;
-  border-radius: 50%; }
-
-.logo:hover {
-  box-shadow: 0 0 10px #aaeecc;
-  width: 200px; }
-
-a:link, a:visited, a:active {
-  text-decoration: none; }
-
 body {
   background-color: white;
   margin: 0;
@@ -121,9 +96,6 @@ body {
   width: 100%; }
 
 @media (min-width: 768px) {
-  .grid-index {
-    display: grid;
-    grid-template-columns: 1fr; }
   .grid-index {
     display: grid;
     column-gap: 10px;
@@ -199,9 +171,6 @@ h2 {
   margin-bottom: 30px;
   margin-top: 30px; }
 
-.tipos-graptoveria {
-  margin-bottom: 50px; }
-
 /* sobre nosotros*/
 .container-sobrenosotros {
   margin-left: 20px;
@@ -227,7 +196,7 @@ h2 {
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
+    margin-left: auto;
     width: 300%; }
   to {
     margin-left: 0%;
@@ -251,7 +220,9 @@ h2 {
     margin-bottom: 30px;
     max-width: 100%; } }
 
-.echeveriaCurls, .ceropegia, .sansevieria {
+.echeveriaCurls,
+.ceropegia,
+.sansevieria {
   width: 250px;
   display: flex;
   flex-direction: row;
@@ -265,8 +236,7 @@ h2 {
 @media (max-width: 800px) {
   .grid-galeria {
     display: grid;
-    grid-area: "nombre"
- "imagenes";
+    grid-area: "nombre" "imagenes";
     grid-template-columns: repeat(1, 1fr);
     row-gap: 30px;
     margin-bottom: 30px;
@@ -307,22 +277,10 @@ h2 {
   filter: opacity(0.5); }
 
 /*precios*/
-.container-precios {
-  display: flex;
-  justify-content: center;
-  justify-items: center; }
-
 td {
   font-size: small;
   color: #0a530a;
   font-family: 'Inter', sans-serif; }
-
-.titulo-producto {
-  font-size: medium;
-  font-weight: bold;
-  color: #0a530a;
-  font-family: 'Inter', sans-serif;
-  background-color: #ecfff6; }
 
 .mensaje {
   font-family: 'Inter', sans-serif;
@@ -345,15 +303,14 @@ td {
     justify-content: center;
     align-items: center;
     align-content: center; }
-  .mapa {
-    width: 50%;
-    margin-left: 5%; }
-  .final {
-    text-align: center; } }
-
-.contacto {
-  text-align: start;
-  margin-top: 10px; }
+    .contacto-grid .mapa {
+      width: 50%;
+      margin-left: 5%; }
+      .contacto-grid .mapa .final {
+        text-align: center; }
+        .contacto-grid .mapa .final .contacto {
+          text-align: start;
+          margin-top: 10px; } }
 
 @media (min-width: 799px) {
   .contacto-grid {
@@ -397,16 +354,12 @@ td {
   .footer_container {
     display: flex;
     margin-left: 0;
-    margin-right: 0; } }
-
-.footer_container {
-  width: 20%;
-  height: 100px;
-  background-color: #aaeecc;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 205px; }
+    margin-right: 0;
+    background-color: #aaeecc;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 205px; } }
 
 .derechos {
   display: flex;
