@@ -53,6 +53,7 @@ $estilo-borde: double;
     color: rgb(10, 83, 10);
     font-family: 'Inter', sans-serif;
     font-size: large;
+
 }
 
 .formulario {
@@ -438,12 +439,18 @@ input {
         display: flex;
         margin-left: 0;
         margin-right: 0;
-        background-color: $color-fondo;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 205px;
-    } 
+    }
+}
+    .footer_container {
+        width: 20%;
+        height: 100px;
+    background-color: rgb(170, 238, 204);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 205px;
+  
+
 }
 .derechos {
     display: flex;
