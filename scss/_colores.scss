@@ -1,3 +1,12 @@
 $color-fondo: rgb(170, 238, 204);
 $color-primario: rgb(10, 83, 10);
 $background: rgb(207, 248, 228);
+
+$colores: (
+    primario: rgb(10, 83, 10)
+    fondo: rgb(170, 238, 204)
+    background: rgb(207, 248, 228)
+);
+
+$h1: map-get($map: $colores, $key: primario);
+$h2: map-get($map: $colores, $key: primario);

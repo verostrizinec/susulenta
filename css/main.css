@@ -283,7 +283,6 @@ h2 {
     margin-left: 0%;
     width: 100%; } }
 
-<<<<<<< HEAD
 @media (max-width: 800px) {
   .grid-fotos {
     display: grid;
@@ -302,12 +301,7 @@ h2 {
     margin-bottom: 30px;
     max-width: 100%; } }
 
-.echeveriaCurls,
-.ceropegia,
-.sansevieria {
-=======
 .echeveriaCurls, .ceropegia, .sansevieria {
->>>>>>> rama-de-sass
   width: 250px;
   display: flex;
   flex-direction: row;
