@@ -104,21 +104,21 @@ body {
     padding: 0%;
     width: 100%;
 }
-@mixin fotos {
+@mixin fotos ($margin){
     color: $color-primario;
     font-size: medium;
     float: left;
     text-align: left;
     font-family: $fuente-principal;
     font-size: 16px;
-    margin-bottom: 5px; 
+    margin-bottom: $margin; 
 }
 .suculentas {
-    @include fotos;
+    @include fotos (5px);
 }
 
 .cactus {
-    @include fotos;
+    @include fotos (25px);
 }
 
 .imgChica {
