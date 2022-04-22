@@ -362,9 +362,7 @@ h2 {
     margin-left: 0%;
     width: 100%; } }
 
-.echeveriaCurls,
-.ceropegia,
-.sansevieria {
+.echeveriaCurls, .ceropegia, .sansevieria {
   width: 250px;
   display: flex;
   flex-direction: row;
@@ -388,7 +386,7 @@ h2 {
   box-shadow: 0px 10px 15px;
   cursor: pointer; }
 
-.imagenes:hover, .echeveriaCurls:hover,
+.imagenes:hover, .echeveriaCurls:hover, .ceropegia:hover, .sansevieria:hover,
 .ceropegia:hover, .sansevieria:hover {
   filter: opacity(0.5); }
 

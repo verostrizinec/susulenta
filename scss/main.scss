@@ -195,9 +195,7 @@ h2 {
       width: 100%;
     }
   }
-.echeveriaCurls, 
-.ceropegia, 
-.sansevieria {
+.echeveriaCurls {
     width: 250px;
     display: flex;
     flex-direction: row;
@@ -206,6 +204,12 @@ h2 {
     border-radius: 20px;
     box-shadow: 0px 10px 15px;
     cursor: pointer;
+}
+.ceropegia {
+    @extend .echeveriaCurls;
+}
+.sansevieria {
+    @extend .echeveriaCurls;
 }
 
     /*galeria*/
