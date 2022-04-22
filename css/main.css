@@ -283,6 +283,7 @@ h2 {
     margin-left: 0%;
     width: 100%; } }
 
+<<<<<<< HEAD
 @media (max-width: 800px) {
   .grid-fotos {
     display: grid;
@@ -304,6 +305,9 @@ h2 {
 .echeveriaCurls,
 .ceropegia,
 .sansevieria {
+=======
+.echeveriaCurls, .ceropegia, .sansevieria {
+>>>>>>> rama-de-sass
   width: 250px;
   display: flex;
   flex-direction: row;
@@ -353,7 +357,7 @@ h2 {
   box-shadow: 0px 10px 15px;
   cursor: pointer; }
 
-.imagenes:hover, .echeveriaCurls:hover,
+.imagenes:hover, .echeveriaCurls:hover, .ceropegia:hover, .sansevieria:hover,
 .ceropegia:hover, .sansevieria:hover {
   filter: opacity(0.5); }
 

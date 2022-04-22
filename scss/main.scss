@@ -258,6 +258,7 @@ h2 {
       width: 100%;
     }
   }
+<<<<<<< HEAD
 @media (max-width: 800px) {
     .grid-fotos {
         display: grid;
@@ -281,6 +282,9 @@ h2 {
 .echeveriaCurls, 
 .ceropegia, 
 .sansevieria {
+=======
+.echeveriaCurls {
+>>>>>>> rama-de-sass
     width: 250px;
     display: flex;
     flex-direction: row;
@@ -289,6 +293,12 @@ h2 {
     border-radius: 20px;
     box-shadow: 0px 10px 15px;
     cursor: pointer;
+}
+.ceropegia {
+    @extend .echeveriaCurls;
+}
+.sansevieria {
+    @extend .echeveriaCurls;
 }
 
     /*galeria*/
