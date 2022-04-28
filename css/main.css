@@ -81,6 +81,183 @@
     font-weight: bold;
     margin-left: 20px; } }
 
+<<<<<<< HEAD
+=======
+#bounceInRight {
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes bounceInRight {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0); }
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes bounceInRight {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0); }
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+
+@media (max-width: 768px) {
+  .tabla {
+    border-style: none; } }
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-areas: "header header header" "container" "footer footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2, 1fr; } }
+
+@media (max-width: 800px) {
+  .header {
+    grid-template-rows: 5, 1fr; } }
+
+@media (max-width: 800px) {
+  .footer_container {
+    align-items: center; } }
+
+/*nav*/
+@media (min-width: 768px) {
+  .grid-index {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: "cactus suculentas";
+    margin-right: 50px;
+    margin-bottom: 5px;
+    align-items: center;
+    row-gap: 30px; } }
+
+@media (min-width: 799px) {
+  .imgChica:hover {
+    filter: opacity(0.5); } }
+
+@media (max-width: 800px) {
+  .imgChica {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px;
+    margin-bottom: 30px;
+    margin-top: 20px; } }
+
+/*sobre nosotros*/
+@media (max-width: 800px) {
+  .grid-fotos {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    row-gap: 30px; } }
+
+@media (min-width: 799px) {
+  .grid-fotos {
+    display: grid;
+    column-gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 30px;
+    max-width: 100%; } }
+
+/*galeria*/
+@media (max-width: 800px) {
+  .grid-galeria {
+    display: grid;
+    grid-area: "nombre" "imagenes";
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    justify-items: center; }
+  .nombre {
+    display: none;
+    visibility: hidden; } }
+
+@media (min-width: 799px) {
+  .grid-galeria {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20px 1fr 20px 1fr;
+    justify-items: center;
+    margin-bottom: 30px; } }
+
+@media (min-width: 799px) {
+  .contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 150px;
+    font-family: "Inter", sans-serif;
+    color: #0a530a;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top: 30px; } }
+
+@media (max-width: 800px) {
+  .contacto-grid {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 3, 1fr;
+    row-gap: 30px;
+    font-family: "Inter", sans-serif;
+    color: #0a530a;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    .contacto-grid .mapa {
+      width: 50%;
+      margin-left: 5%; }
+      .contacto-grid .mapa .final {
+        text-align: center; }
+        .contacto-grid .mapa .final .contacto {
+          text-align: start;
+          margin-top: 10px; } }
+
+>>>>>>> rama-de-sass
 /*APLICANDO BOOTSTRAP*/
 .tabla {
   margin-top: 30px;
@@ -215,7 +392,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: 0px 10px 15px;
   cursor: pointer; }
