@@ -3,17 +3,10 @@ $color-primario: rgb(10, 83, 10);
 $background: rgb(207, 248, 228);
 
 $colores: (
-<<<<<<< HEAD
-    primario: rgb(10, 83, 10)
-    fondo: rgb(170, 238, 204)
-    background: rgb(207, 248, 228)
-);
-=======
     primario: rgb(10, 83, 10),
     fondo: rgb(170, 238, 204),
     background: rgb(207, 248, 228),
-    );
->>>>>>> rama-de-sass
+);
 
 $h1: map-get($map: $colores, $key: primario);
 $h2: map-get($map: $colores, $key: primario);

@@ -81,8 +81,6 @@
     font-weight: bold;
     margin-left: 20px; } }
 
-<<<<<<< HEAD
-=======
 #bounceInRight {
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
@@ -257,7 +255,6 @@
           text-align: start;
           margin-top: 10px; } }
 
->>>>>>> rama-de-sass
 /*APLICANDO BOOTSTRAP*/
 .tabla {
   margin-top: 30px;
@@ -270,10 +267,6 @@
   margin-left: 25%;
   border-color: #0a530a;
   border-style: double; }
-
-@media (max-width: 768px) {
-  .tabla {
-    border-style: none; } }
 
 .table {
   font-size: medium;
@@ -319,9 +312,7 @@
   margin: auto;
   display: grid;
   /*posicion de las areas */
-  grid-template-areas: "header"
- "container"
- "footer_container"; }
+  grid-template-areas: "header" "container" "footer_container"; }
 
 /* Nombrar areas */
 header {
@@ -333,41 +324,12 @@ header {
 .footer_container {
   grid-area: footer; }
 
-/* responsive */
-@media (max-width: 800px) {
-  .container {
-    grid-template-areas: "header header header"
- "container"
- "footer footer footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 2, 1fr; } }
-
-@media (max-width: 800px) {
-  .header {
-    grid-template-rows: 5, 1fr; } }
-
-@media (max-width: 800px) {
-  .footer_container {
-    align-items: center; } }
-
 /* nav */
 body {
   background-color: white;
   margin: 0;
   padding: 0%;
   width: 100%; }
-
-@media (min-width: 768px) {
-  .grid-index {
-    display: grid;
-    column-gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    grid-template-areas: "cactus suculentas";
-    margin-right: 50px;
-    margin-bottom: 5px;
-    align-items: center;
-    row-gap: 30px; } }
 
 .suculentas {
   color: #0a530a;
@@ -397,18 +359,6 @@ body {
   border-radius: 20px;
   box-shadow: 0px 10px 15px;
   cursor: pointer; }
-
-@media (min-width: 799px) {
-  .imgChica:hover {
-    filter: opacity(0.5); } }
-
-@media (max-width: 800px) {
-  .imgChica {
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 0px 10px 15px;
-    margin-bottom: 30px;
-    margin-top: 20px; } }
 
 .titulo {
   color: #0a530a;
@@ -465,24 +415,6 @@ h2 {
     margin-left: 0%;
     width: 100%; } }
 
-@media (max-width: 800px) {
-  .grid-fotos {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 100%;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    row-gap: 30px; } }
-
-@media (min-width: 799px) {
-  .grid-fotos {
-    display: grid;
-    column-gap: 100px;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    margin-bottom: 30px;
-    max-width: 100%; } }
-
 .echeveriaCurls, .ceropegia, .sansevieria {
   width: 250px;
   display: flex;
@@ -494,33 +426,6 @@ h2 {
   cursor: pointer; }
 
 /*galeria*/
-@media (max-width: 800px) {
-  .grid-galeria {
-    display: grid;
-    grid-area: "nombre"
- "imagenes";
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 30px;
-    margin-bottom: 30px;
-    justify-content: center;
-    justify-items: center; }
-  .nombre {
-    display: none;
-    visibility: hidden; } }
-
-@media (min-width: 799px) {
-  .grid-galeria {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    display: grid;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 20px 1fr 20px 1fr;
-    justify-items: center;
-    margin-bottom: 30px; } }
-
 .nombre {
   font-family: "Inter", sans-serif;
   font-weight: bold;
